@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNS Industries | Leading Rivet Manufacturer in India</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -27,27 +27,34 @@
         </div>
     </header>
 
-    <!-- NEW Hero Section: Interactive Application Explorer -->
-    <section id="explorer" class="hero-explorer-section">
+    <!-- Static Hero Section -->
+    <section class="hero-static">
+        <div class="hero-static-content" data-aos="fade-in">
+            <h1 class="hero-headline">Welcome to SNS Industries – Leading Manufacturer of High-Quality Rivets in India</h1>
+            <p class="hero-subheadline">As a reputable brand in the fastening sector, we are dedicated to providing strong, accurate, and high-performing rivet solutions.</p>
+            <a href="#explorer" class="btn btn-primary">Rivets in Action</a>
+        </div>
+    </section>
+    
+    <!-- Interactive Application Explorer Section -->
+    <section id="explorer" class="explorer-section">
         <div class="hero-explorer-background">
              <video id="industry-video-player" autoplay loop muted playsinline key="automotive-video">
-                <source src="videos/Base_video_prompt_202507221132_b61t8.mp4" type="video/mp4">
+                <source src="./videos/Base_video_prompt_202507221132_b61t8.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div id="hotspots-container"></div>
         </div>
         <div class="hero-explorer-content">
-            <h1 class="hero-headline">Welcome to SNS Industries – Leading Manufacturer of High-Quality Rivets in India</h1>
-            <p class="hero-subheadline">Select an industry to see how our products form the backbone of modern engineering.</p>
-            
-            <div class="explorer-tabs">
+            <h2 class="text-center" data-aos="fade-up">Rivets in Action</h2>
+            <p class="section-intro text-center" data-aos="fade-up" data-aos-delay="100">Select an industry to see how our products form the backbone of modern engineering.</p>
+            <div class="explorer-tabs" data-aos="fade-up" data-aos-delay="200">
                 <button class="tab-link active" data-industry="Automotive">Automotive</button>
                 <button class="tab-link" data-industry="Aerospace">Aerospace</button>
                 <button class="tab-link" data-industry="Construction">Construction</button>
                 <button class="tab-link" data-industry="Shipbuilding">Shipbuilding</button>
             </div>
         </div>
-        <!-- Info Panel is positioned absolutely within this section -->
         <div id="info-panel" class="info-panel">
             <button id="info-panel-close" class="info-panel-close">&times;</button>
             <h3 id="info-panel-title"></h3>
@@ -225,6 +232,6 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
