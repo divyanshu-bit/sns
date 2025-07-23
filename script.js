@@ -19,49 +19,49 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Interactive Application Explorer Logic ---
     const explorerData = {
         'Automotive': {
-            baseVideo: 'videos/Base_video_prompt_202507221132_b61t8.mp4',
+            baseVideo: './videos/Base_video_prompt_202507221132_b61t8.mp4',
             hotspots: [
                 {
                     title: 'Body Panels & Chassis',
                     description: 'Self-piercing rivets are used to join dissimilar materials like aluminum and high-strength steel, providing a strong, lightweight bond crucial for modern vehicle safety and fuel efficiency.',
                     rivetType: 'Self-Piercing Rivets',
-                    highlightVideo: 'videos/For_body_panels_202507221139_8mf9b.mp4',
+                    highlightVideo: './videos/For_body_panels_202507221139_8mf9b.mp4',
                     position: { top: '55%', left: '50%' }
                 }
             ]
         },
         'Aerospace': {
-            baseVideo: 'videos/A_photorealistic_4k_202507221148_byb5m.mp4',
+            baseVideo: './videos/A_photorealistic_4k_202507221148_byb5m.mp4',
             hotspots: [
                 {
                     title: 'Fuselage Structure',
                     description: 'High-strength titanium and aluminum alloy rivets are essential for assembling the aircraft fuselage, ensuring structural integrity under extreme stress and pressure variations at high altitudes.',
                     rivetType: 'Solid Shank Titanium Rivets',
-                    highlightVideo: 'videos/For_fuselage_structure_202507221151_8x6t3.mp4',
+                    highlightVideo: './videos/For_fuselage_structure_202507221151_8x6t3.mp4',
                     position: { top: '50%', left: '60%' }
                 }
             ]
         },
         'Construction': {
-            baseVideo: 'videos/Base_video_prompt_202507221132_2k1zn.mp4',
+            baseVideo: './videos/Base_video_prompt_202507221132_2k1zn.mp4',
             hotspots: [
                 {
                     title: 'Steel Truss Bridges',
                     description: 'Large-diameter structural steel rivets are used to connect beams and trusses in bridges, offering unparalleled shear strength and durability against environmental factors and heavy loads.',
                     rivetType: 'Structural Steel Rivets (ASTM A502)',
-                    highlightVideo: 'videos/For_steel_truss_202507221857.mp4',
+                    highlightVideo: './videos/For_steel_truss_202507221857.mp4',
                     position: { top: '60%', left: '45%' }
                 }
             ]
         },
         'Shipbuilding': {
-            baseVideo: 'videos/A_majestic_sweeping_202507221908.mp4',
+            baseVideo: './videos/A_majestic_sweeping_202507221908.mp4',
             hotspots: [
                  {
                     title: 'Hull Plating',
                     description: 'Watertight rivets are critical for joining the steel plates of a ship\'s hull, providing a strong and corrosion-resistant seal that maintains the vessel\'s integrity in harsh marine environments.',
                     rivetType: 'Marine-Grade Steel Rivets',
-                    highlightVideo: 'videos/A_majestic_sweeping_202507221908.mp4', // Placeholder: Replays base video
+                    highlightVideo: './videos/For_hull_plating_202507221920.mp4',
                     position: { top: '65%', left: '50%' }
                 }
             ]
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // --- Smooth Scrolling for Navigation Links ---
-    const navLinks = document.querySelectorAll('.main-nav a');
+    const navLinks = document.querySelectorAll('.main-nav a, .btn[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
