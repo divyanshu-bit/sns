@@ -65,8 +65,7 @@ p {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(30, 43, 56, 0.8);
-    backdrop-filter: blur(10px);
+    background: transparent;
     padding: 25px 0;
     transition: padding 0.3s ease, background-color 0.3s ease;
 }
@@ -124,9 +123,37 @@ p {
     width: 100%;
 }
 
+/* Static Hero Section */
+.hero-static {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, var(--dark-blue), var(--steel-grey));
+}
 
-/* NEW Hero Explorer Section */
-.hero-explorer-section {
+.hero-static-content {
+    max-width: 800px;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-subheadline {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Interactive Explorer Section */
+.explorer-section {
     position: relative;
     height: 100vh;
     display: flex;
@@ -166,28 +193,25 @@ p {
 }
 
 .hero-explorer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
     z-index: 1;
-}
-
-.hero-headline {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
-}
-
-.hero-subheadline {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .explorer-tabs {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
     flex-wrap: wrap;
     z-index: 1;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 
 .tab-link {
