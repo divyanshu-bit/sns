@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Industries | Leading Rivet Manufacturer in India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">SNS INDUSTRIES</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#explorer">Applications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- NEW Hero Section: Interactive Application Explorer -->
+    <section id="explorer" class="hero-explorer-section">
+        <div class="hero-explorer-background">
+             <video id="industry-video-player" autoplay loop muted playsinline key="automotive-video">
+                <source src="videos/Base_video_prompt_202507221132_b61t8.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="hotspots-container"></div>
+        </div>
+        <div class="hero-explorer-content">
+            <h1 class="hero-headline">Welcome to SNS Industries – Leading Manufacturer of High-Quality Rivets in India</h1>
+            <p class="hero-subheadline">Select an industry to see how our products form the backbone of modern engineering.</p>
+            
+            <div class="explorer-tabs">
+                <button class="tab-link active" data-industry="Automotive">Automotive</button>
+                <button class="tab-link" data-industry="Aerospace">Aerospace</button>
+                <button class="tab-link" data-industry="Construction">Construction</button>
+                <button class="tab-link" data-industry="Shipbuilding">Shipbuilding</button>
+            </div>
+        </div>
+        <!-- Info Panel is positioned absolutely within this section -->
+        <div id="info-panel" class="info-panel">
+            <button id="info-panel-close" class="info-panel-close">&times;</button>
+            <h3 id="info-panel-title"></h3>
+            <p id="info-panel-description"></p>
+            <strong>Rivet Type:</strong>
+            <p id="info-panel-rivet-type"></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">About SNS Industries</h2>
+            <p class="section-intro text-center" data-aos="fade-up" data-aos-delay="100">Blind rivets, POP rivets, aluminum rivets, SS POP rivets, colored POP rivets, HOLO rivets, and other industrial fastening goods are all produced by SNS Industries, one of India's leading producers of premium rivets. With our headquarters in India, we have made a name for ourselves in the fasteners sector by being steadfast in our dedication to accuracy, dependability, and client satisfaction.</p>
+            
+            <div class="vision-mission">
+                <div class="vision-mission-item" data-aos="fade-right">
+                    <h3>Our Vision</h3>
+                    <p>Our goal at SNS Industries is to become a well-known and reputable manufacturer of premium rivets by continuously providing creative, dependable, and long-lasting fastening solutions. By using cutting-edge technology, precise engineering, and a customer-focused attitude, we hope to lead the industry and enable sectors to grow with confidence, strength, and efficiency.</p>
+                </div>
+                <div class="vision-mission-item" data-aos="fade-left">
+                    <h3>Our Mission</h3>
+                    <p>Our goal is to satisfy our clients' unique demands while producing and supplying rivets that are of the greatest caliber and functionality. By providing specialized solutions, guaranteeing on-time delivery, and upholding competitive pricing, we hope to create lasting relationships.</p>
+                </div>
+            </div>
+            
+            <div class="core-values" data-aos="fade-up">
+                <h3 class="text-center">Our Core Values</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content"><h4>Quality First</h4><p>We never skimp on quality. Strict testing and inspection are performed on each rivet.</p></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-content"><h4>Integrity</h4><p>We maintain openness, equity, and truthfulness in all of our commercial interactions.</p></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-content"><h4>Innovation</h4><p>To keep ahead of market trends, we believe in continuously improving our processes and goods.</p></div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-content"><h4>Customer Focus</h4><p>We put your happiness first. We fulfill our commitments on schedule and according to the guidelines.</p></div>
+                    </div>
+                     <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-content"><h4>Accountability</h4><p>We are dedicated to sustainable development, safe production, and responsible manufacturing.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Explore Our Rivet Product Range</h2>
+            <p class="section-intro text-center" data-aos="fade-up" data-aos-delay="100">We manufacture and supply a comprehensive range of rivets to suit all fastening applications. Our rivets are available in multiple materials, head styles, sizes, and finishes to meet the specific demands of each industry.</p>
+            <div class="product-grid">
+                <div class="product-card" data-aos="zoom-in-up">
+                    <h3>Blind Rivets</h3>
+                    <p>High-performance blind rivets for situations where only one side of the joint is accessible. Perfect for automotive, HVAC, and electrical enclosures, offering strong, vibration-resistant couplings.</p>
+                </div>
+                <div class="product-card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3>POP Rivets</h3>
+                    <p>Known for their strong gripping strength and ease of installation, our POP rivets (or pull rivets) are a top choice for light assembly and sheet metal applications.</p>
+                </div>
+                <div class="product-card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <h3>Aluminium Blind Rivets</h3>
+                    <p>Resistant to corrosion with a great strength-to-weight ratio. Widely used in HVAC, signs, and construction, they are ideal for lightweight assemblies.</p>
+                </div>
+                <div class="product-card" data-aos="zoom-in-up">
+                    <h3>Aluminium POP Rivets</h3>
+                    <p>Combining lightweight design with non-corrosive qualities. Frequently utilized in fields where both functionality and appearance are important.</p>
+                </div>
+                 <div class="product-card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <h3>Aluminium Solid Rivets</h3>
+                    <p>The preferred option where strength is crucial. Frequently used in high-load and structural applications, providing a strong and long-lasting fastening in demanding projects.</p>
+                </div>
+                 <div class="product-card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <h3>Custom Rivets</h3>
+                    <p>Need something specific? We offer custom rivet manufacturing to meet your exact specifications, including novel head types, coatings, or unusual dimensions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Counter Section -->
+    <section id="stats" class="stats-section">
+        <div class="container text-center">
+            <h2 data-aos="fade-up">Our Impact in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Million Rivets Produced Annually</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="counter" data-target="99">0</h3>
+                    <p>% Customer Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section id="quality" class="content-section">
+        <div class="container text-center">
+            <h2 data-aos="fade-up">Commitment to Quality and Reliability</h2>
+            <p class="section-intro" data-aos="fade-up" data-aos-delay="100">At SNS Industries, quality is a promise rather than simply an objective. At every level of manufacturing, we adhere to stringent quality control procedures. Every batch of rivets is examined for precision in size, strength, and finish. Our products are made to function well under the most demanding conditions and under force. You can be confident of constant quality and long-lasting performance whether you choose our colorful POP rivets, SS POP rivets, or aluminum blind rivets.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Why Businesses Trust SNS Industries</h2>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-right">
+                    <h3>Industry Knowledge</h3>
+                    <p>With years of manufacturing expertise, we comprehend the technical requirements of different industries and produce rivets that function dependably in every situation.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-up">
+                    <h3>Premium Materials</h3>
+                    <p>To guarantee strength, resistance to corrosion, and long-lasting performance, we exclusively utilize the highest grade stainless steel, aluminum, and alloys.</p>
+                </div>
+                <div class="feature-item" data-aos="fade-left">
+                    <h3>Precision Manufacturing</h3>
+                    <p>Our rivets are engineered with accuracy and consistency to satisfy precise requirements and guarantee perfect attaching each and every time.</p>
+                </div>
+                 <div class="feature-item" data-aos="fade-right">
+                    <h3>Customization Possibility</h3>
+                    <p>Do you require a certain color, head type, or size? We provide specialized solutions made for your particular use case.</p>
+                </div>
+                 <div class="feature-item" data-aos="fade-up">
+                    <h3>Bulk Supply & On-Time Delivery</h3>
+                    <p>We can fulfill high order volumes while keeping quick turnaround times and on-time delivery thanks to our in-house production capabilities.</p>
+                </div>
+                 <div class="feature-item" data-aos="fade-left">
+                    <h3>Customer-Focused Strategy</h3>
+                    <p>A customer-focused strategy with post-purchase assistance. We put your happiness first and fulfill our commitments on schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Request a Quote</h2>
+            <p class="section-intro text-center" data-aos="fade-up" data-aos-delay="100">Do you need something specific? Contact us today to discuss your project requirements. Our technical team will collaborate with you to provide a quick, affordable solution.</p>
+            <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Business Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Company Name">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+                <textarea placeholder="Your Message / Project Details" rows="5"></textarea>
+                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 SNS Industries. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
